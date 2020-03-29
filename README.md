@@ -1,6 +1,7 @@
-# Kotlin-Multiplatform (Android & iOS & JVM Desktop App)
+# Kotlin-Multiplatform (Android, iOS, JS & JVM Desktop App)
+![kotlin-version](https://img.shields.io/badge/kotlin-1.3.50-orange) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-This example shows how to create a simple Android/iOS/JVM project sharing some Kotlin code. This app saves on a local database your favourites locations and get the current weather of them from OpenWeatherMap.
+This example shows how to create a simple Android/iOS/JVM/JS project sharing some Kotlin code. This app saves on a local database your favourites locations and get the current weather of them from OpenWeatherMap.
 
 In this app we share common code for both platforms (Android/iOS) to get data from an API (in this case OpenWeatherMap). The libraries that we use are:
 
@@ -54,6 +55,11 @@ If you want to launch a web to get the weather you can try executing the next co
 ./gradlew JsApp:run
 ./gradlew BackEnd:run
 --> localhost:8080
+```
+
+Current weather is not shown when you launch the browser? If you have this problem (Module not found: Error: Can't resolve 'core-js/features/object/assign') try to reinstall the node module core-js:
+```
+npm install core-js
 ```
 
 <img src="https://github.com/jarroyoesp/KotlinMultiPlatform/blob/master/images/jsApp.png" width="400">
